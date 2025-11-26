@@ -18,34 +18,80 @@
       padding: 2rem;
       text-align: center;
     }
+
     h1 {
       font-size: 2rem;
       margin-bottom: 1rem;
     }
+
+    /* Default link styles */
     a {
       color: #00ffff;
       text-decoration: none;
       font-size: 1.2rem;
-      margin: 0.5rem 0;
+      margin: 0.1rem 0; /* even tighter spacing */
       display: inline-block;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
+    /* MEW circle styling */
+    .mew {
+      color: #ffffff;
+      font-size: 1.4rem;
+      margin: 1rem 0;
+      padding: 0.6rem 1.2rem;
+      border: 2px solid #00ffff;
+      border-radius: 50%;
+      display: inline-block;
+      box-shadow: 0 0 12px #00ffff88;
+    }
+
+    /* Green spryte */
+    .spryte {
+      color: #00ff87;
+    }
+
+    /* Orange email */
+    .email {
+      color: #ff9b30;
+    }
+
     @media (min-width: 600px) {
       h1 {
         font-size: 2.5rem;
       }
       a {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+      }
+      .mew {
+        font-size: 1.6rem;
+        padding: 0.7rem 1.3rem;
       }
     }
   </style>
 </head>
 <body>
   <h1>
-  <a href="https://www.mewmewmew.net/" target="_blank" rel="noopener">mewmewmew.net</a><br />
-  <a href="https://spryte.info" target="_blank" rel="noopener">spryte.info</a><br />
-  <a href="mailto:cameronscott91@gmail.com">cameronscott91@gmail.com</a>
+
+    <a href="https://www.mewmewmew.net/" class="mew" target="_blank" rel="noopener">MEW</a><br />
+
+    <a href="https://vimeo.com/manage/videos/720186504" target="_blank" rel="noopener">I dont know</a><br />
+    <a href="https://vimeo.com/manage/videos/569354284" target="_blank" rel="noopener">Remora</a><br />
+    <a href="https://vimeo.com/manage/videos/496627610" target="_blank" rel="noopener">the liar/plot</a><br />
+    <a href="https://gauze.info/" target="_blank" rel="noopener">Gauze</a><br />
+    <a href="https://vimeo.com/manage/videos/440469707" target="_blank" rel="noopener">Slowing</a><br />
+    <a href="https://vimeo.com/manage/videos/393771838" target="_blank" rel="noopener">before/sun</a><br />
+    <a href="https://vimeo.com/manage/videos/341780279" target="_blank" rel="noopener">Ghost</a><br />
+    <a href="https://vimeo.com/manage/videos/333732794" target="_blank" rel="noopener">The Event Happens Elsewhere</a><br />
+    <a href="https://vimeo.com/manage/videos/324884514" target="_blank" rel="noopener">Clip-Falling Objects ESO</a><br />
+    <a href="https://vimeo.com/manage/videos/260161476" target="_blank" rel="noopener">A Soft Rupture</a><br />
+
+    <a href="https://spryte.info" class="spryte" target="_blank" rel="noopener">spryte.info</a><br />
+    <a href="mailto:cameronscott91@gmail.com" class="email">cameronscott91@gmail.com</a>
+
+  </h1>
 </body>
 </html>
