@@ -5,13 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Links Paragraph</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
     body {
       margin: 0;
       background: #000;
       color: #fff;
-      font-family: "PT Serif ", ;
       padding: 1.2rem;
       line-height: 1.3;
       font-size: 1rem;
@@ -31,18 +28,9 @@
       text-decoration: underline;
     }
 
-    .mew {
-      color: #ffffff;
-      font-weight: 600;
-    }
-
-    .spryte {
-      color: #00ff87;
-    }
-
-    .email {
-      color: #ff9b30;
-    }
+    .mew { color: #ffffff; font-weight: 600; }
+    .spryte { color: #00ff87; }
+    .email { color: #ff9b30; }
   </style>
 </head>
 <body>
@@ -63,5 +51,26 @@
       <a href="mailto:cameronscott91@gmail.com" class="email">cameronscott91@gmail.com</a>
     </p>
   </div>
+
+  <script>
+    const fonts = [
+      "Poppins","Syne","Bad Script","Inter","Fira Sans","Work Sans","Karla","Space Grotesk","Caveat",
+      "Roboto","Lato","Open Sans","Merriweather","Montserrat","Raleway","Nunito","Quicksand","Ubuntu",
+      "Dancing Script","Pacifico","Indie Flower","Bebas Neue","Oswald","Titillium Web","Playfair Display","Josefin Sans",
+      "Arvo","Varela Round","Exo 2","Rubik","Catamaran","Chivo","Fjalla One","Inconsolata","Cabin","Barlow",
+      "Orbitron","Comfortaa","Dosis","Bangers","Amatic SC","Sacramento","Fredoka One","Charmonman","Caveat Brush",
+      "Shadows Into Light","Gloria Hallelujah","Quattrocento Sans","Architects Daughter","Knewave","Patua One","Satisfy"
+    ];
+
+    const chosen = fonts[Math.floor(Math.random() * fonts.length)];
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = `https://fonts.googleapis.com/css2?family=${chosen.replace(/ /g, '+')}&display=swap`;
+    document.head.appendChild(link);
+
+    document.addEventListener("DOMContentLoaded", () => {
+      document.body.style.fontFamily = `'${chosen}', sans-serif`;
+    });
+  </script>
 </body>
 </html>
